@@ -13,7 +13,7 @@ My field of topic is Healthcare. I have chosen to work on data of Cancer patient
 
 ## Describe your dataset in about 150-200 words
 
-This dataset contains information of patients suffering from different types of cancer in Canada. It contains number of new cases and age-standardized rates of new cancer cases by stage at diagnosis from 2011 to the most recent diagnosis year available. Included are colorectal, lung, breast, cervical and prostate cancer. 
+This dataset contains information of patients suffering from different types of cancer in Canada. It was published by Statistics Canada and obtained from  Open Canada website. It is licenced by Open Govt Licence of Canada. It contains number of new cases and age-standardized rates of new cancer cases by stage at diagnosis from 2011 to the most recent diagnosis year available. Included are colorectal, lung, breast, cervical and prostate cancer. 
 
 ## Team Members
 
