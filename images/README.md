@@ -5,7 +5,8 @@
 
 ## Description
  - Images and graphical respresentation of data
-![Cancer Cases 2011-17.png]
+
+![Documents/GitHub/course-project-solo_6023-2/images/Cancer Cases by Province.png.png]
 
 ![Cancer Cases by Province.png]
 
