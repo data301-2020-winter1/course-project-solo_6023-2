@@ -6,11 +6,11 @@
 ## Description
  - Images and graphical respresentation of data
 
-![Documents/GitHub/course-project-solo_6023-2/images/Cancer Cases by Province.png.png]
+![images/Cancer Cases 2011-17.png]
 
-![Cancer Cases by Province.png]
+![images/Cancer Cases by Province.png]
 
-![Cancer Types in different stages.png]
+![images/Cancer Types in different stages.png]
 
 
 ## Team Members
