@@ -17,10 +17,10 @@ This dataset contains information of patients suffering from different types of 
 
 ## Team Members
 
-- Person 1: Omkar Kulkarni
+ **Omkar Kulkarni**
 
 ## References
 
 Statistics Canada
-SEER (https://seer.cancer.gov/)
+[SEER](https://seer.cancer.gov/)
 https://open.canada.ca/data/en/dataset/bc5becae-2a29-49ba-80ea-7f6ae6708d04
