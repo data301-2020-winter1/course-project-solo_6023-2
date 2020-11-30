@@ -1,3 +1,4 @@
+import pandas as pd
 
 def load_and_process(url):
     df=(pd.read_csv(url).drop(columns=["DGUID", "UOM", "SCALAR_FACTOR", "VECTOR", "COORDINATE", "STATUS", "SYMBOL", "TERMINATED", "UOM_ID", "SCALAR_ID", "DECIMALS", "VALUE"]).dropna().reset_index(drop=True))
