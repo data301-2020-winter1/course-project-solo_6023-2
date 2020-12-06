@@ -15,6 +15,10 @@ My field of topic is Healthcare. I have chosen to work on data of Cancer patient
 
 This dataset contains information of patients suffering from different types of cancer in Canada. It was published by Statistics Canada and obtained from  Open Canada website. It is licenced by Open Govt Licence of Canada. It contains number of new cases and age-standardized rates of new cancer cases by stage at diagnosis from 2011 to the most recent diagnosis year available. Included are colorectal, lung, breast, cervical and prostate cancer. The data is collected from Surveillance, Epidemiology, and End Results (SEER) Groups. SEER Program provides information on cancer statistics in an effort to reduce the cancer burden among the U.S. population. SEER is supported by the Surveillance Research Program (SRP) in NCI's Division of Cancer Control and Population Sciences (DCCPS).
 
+## Link to the Dashboard Presentation
+Here is the link for the presentation of my dashboard
+https://vimeo.com/487896835 
+
 ## Team Members
 
  **Omkar Kulkarni**
