@@ -1,0 +1,2164 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.1110.1623                               -->
+<workbook source-build='2020.3.3 (20203.20.1110.1623)' source-platform='win' version='18.1' xml:base='https://dub01.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Tableau-OmkarKulkarni' path='/t/data301dashboards/workbooks' revision='1.1' site='data301dashboards' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='13100762_cleaned' inline='true' name='federated.1b8u2vt0dbuy7116ooyix0nf9m65' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='13100762_cleaned' name='textscan.1iomzpo0ff5ydc14d6ba5049xw3g'>
+            <connection class='textscan' directory='C:/Users/oskul/Documents/GitHub/DATA301' filename='13100762_cleaned.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1iomzpo0ff5ydc14d6ba5049xw3g' name='13100762_cleaned.csv' table='[13100762_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='REF_DATE' ordinal='0' />
+            <column datatype='string' name='GEO' ordinal='1' />
+            <column datatype='string' name='Sex' ordinal='2' />
+            <column datatype='string' name='Characteristics' ordinal='3' />
+            <column datatype='string' name='Primary_Types' ordinal='4' />
+            <column datatype='string' name='Stage' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1iomzpo0ff5ydc14d6ba5049xw3g' name='13100762_cleaned.csv' table='[13100762_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='REF_DATE' ordinal='0' />
+            <column datatype='string' name='GEO' ordinal='1' />
+            <column datatype='string' name='Sex' ordinal='2' />
+            <column datatype='string' name='Characteristics' ordinal='3' />
+            <column datatype='string' name='Primary_Types' ordinal='4' />
+            <column datatype='string' name='Stage' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[13100762_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REF_DATE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[REF_DATE]</local-name>
+            <parent-name>[13100762_cleaned.csv]</parent-name>
+            <remote-alias>REF_DATE</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[13100762_cleaned.csv_D862B1781B1042B7908974AA6113A0F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GEO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GEO]</local-name>
+            <parent-name>[13100762_cleaned.csv]</parent-name>
+            <remote-alias>GEO</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[13100762_cleaned.csv_D862B1781B1042B7908974AA6113A0F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sex]</local-name>
+            <parent-name>[13100762_cleaned.csv]</parent-name>
+            <remote-alias>Sex</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[13100762_cleaned.csv_D862B1781B1042B7908974AA6113A0F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Characteristics</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Characteristics]</local-name>
+            <parent-name>[13100762_cleaned.csv]</parent-name>
+            <remote-alias>Characteristics</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[13100762_cleaned.csv_D862B1781B1042B7908974AA6113A0F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary_Types</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Primary_Types]</local-name>
+            <parent-name>[13100762_cleaned.csv]</parent-name>
+            <remote-alias>Primary_Types</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[13100762_cleaned.csv_D862B1781B1042B7908974AA6113A0F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Stage]</local-name>
+            <parent-name>[13100762_cleaned.csv]</parent-name>
+            <remote-alias>Stage</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[13100762_cleaned.csv_D862B1781B1042B7908974AA6113A0F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Characteristics]' role='dimension' type='nominal' />
+      <column datatype='string' name='[GEO]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Primary Types' datatype='string' name='[Primary_Types]' role='dimension' type='nominal' />
+      <column caption='Ref Date' datatype='integer' name='[REF_DATE]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Sex]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Stage]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='13100762_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[13100762_cleaned.csv_D862B1781B1042B7908974AA6113A0F4]' role='measure' type='quantitative' />
+      <column-instance column='[Characteristics]' derivation='Count' name='[cnt:Characteristics:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[GEO]' derivation='None' name='[none:GEO:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Primary_Types]' derivation='None' name='[none:Primary_Types:nk]' pivot='key' type='nominal' />
+      <column-instance column='[REF_DATE]' derivation='None' name='[none:REF_DATE:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Sex]' derivation='None' name='[none:Sex:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Stage]' derivation='None' name='[none:Stage:nk]' pivot='key' type='nominal' />
+      <group caption='Action (GEO)' hidden='true' name='[Action (GEO)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[GEO]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (GEO,Primary Types)' hidden='true' name='[Action (GEO,Primary Types)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[GEO]' />
+          <groupfilter function='level-members' level='[Primary_Types]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (GEO,Ref Date)' hidden='true' name='[Action (GEO,Ref Date)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[GEO]' />
+          <groupfilter function='level-members' level='[none:REF_DATE:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Primary Types)' hidden='true' name='[Action (Primary Types)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Primary_Types]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (Sex,Stage)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Sex:nk]' />
+          <groupfilter function='level-members' level='[none:Stage:nk]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Stage:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;All stages combined&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Stage III&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Stage II&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Stage not available&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Stage I&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Stage IV&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Stage 0&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Stage unknown&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:GEO:nk]&#10;[none:Forecast Indicator:nk]' type='palette'>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;Alberta&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;Saskatchewan&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_brown_10_0'>
+              <bucket>&quot;Prince Edward Island&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>&quot;New Brunswick&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gray_10_0'>
+              <bucket>&quot;Nova Scotia&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>&quot;Manitoba&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;British Columbia&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;Yukon&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_pink_10_0'>
+              <bucket>&quot;Nunavut&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_purple_10_0'>
+              <bucket>&quot;Ontario&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_red_10_0'>
+              <bucket>&quot;Northwest Territories&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_teal_10_0'>
+              <bucket>&quot;Newfoundland and Labrador&quot;</bucket>
+            </map-pri>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]:1&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Primary_Types:nk]' palette='superfishel_stone_10_0' type='palette'>
+            <map to='#55ad89'>
+              <bucket>&quot;Colon and rectum&quot;</bucket>
+            </map>
+            <map to='#6388b4'>
+              <bucket>&quot;Rectum and rectosigmoid&quot;</bucket>
+            </map>
+            <map to='#8cc2ca'>
+              <bucket>&quot;Colon excluding rectum&quot;</bucket>
+            </map>
+            <map to='#bb7693'>
+              <bucket>&quot;Breast&quot;</bucket>
+            </map>
+            <map to='#c3bc3f'>
+              <bucket>&quot;Cervix uteri&quot;</bucket>
+            </map>
+            <map to='#ef6f6a'>
+              <bucket>&quot;Lung and bronchus&quot;</bucket>
+            </map>
+            <map to='#ffae34'>
+              <bucket>&quot;Prostate&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:GEO:nk]' palette='gray_10_0' type='palette'>
+            <map to='#49525e'>
+              <bucket>&quot;Yukon&quot;</bucket>
+            </map>
+            <map to='#535d68'>
+              <bucket>&quot;Saskatchewan&quot;</bucket>
+            </map>
+            <map to='#5e6873'>
+              <bucket>&quot;Prince Edward Island&quot;</bucket>
+            </map>
+            <map to='#68747d'>
+              <bucket>&quot;Ontario&quot;</bucket>
+            </map>
+            <map to='#748087'>
+              <bucket>&quot;Nunavut&quot;</bucket>
+            </map>
+            <map to='#818c91'>
+              <bucket>&quot;Nova Scotia&quot;</bucket>
+            </map>
+            <map to='#8e979b'>
+              <bucket>&quot;Northwest Territories&quot;</bucket>
+            </map>
+            <map to='#9ca3a5'>
+              <bucket>&quot;Newfoundland and Labrador&quot;</bucket>
+            </map>
+            <map to='#abafb0'>
+              <bucket>&quot;New Brunswick&quot;</bucket>
+            </map>
+            <map to='#b8bbbb'>
+              <bucket>&quot;Manitoba&quot;</bucket>
+            </map>
+            <map to='#c7c9c8'>
+              <bucket>&quot;British Columbia&quot;</bucket>
+            </map>
+            <map to='#d5d5d5'>
+              <bucket>&quot;Alberta&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Sex:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Males&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Both sexes&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Females&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='13100762_cleaned.csv' id='13100762_cleaned.csv_D862B1781B1042B7908974AA6113A0F4'>
+            <properties context=''>
+              <relation connection='textscan.1iomzpo0ff5ydc14d6ba5049xw3g' name='13100762_cleaned.csv' table='[13100762_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='REF_DATE' ordinal='0' />
+                  <column datatype='string' name='GEO' ordinal='1' />
+                  <column datatype='string' name='Sex' ordinal='2' />
+                  <column datatype='string' name='Characteristics' ordinal='3' />
+                  <column datatype='string' name='Primary_Types' ordinal='4' />
+                  <column datatype='string' name='Stage' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.1b8u2vt0dbuy7116ooyix0nf9m65'>
+      <datasources>
+        <datasource caption='13100762_cleaned' name='federated.1b8u2vt0dbuy7116ooyix0nf9m65' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1b8u2vt0dbuy7116ooyix0nf9m65'>
+        <column datatype='string' name='[GEO]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+        <column-instance column='[GEO]' derivation='None' name='[none:GEO:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+        <groupfilter function='level-members' level='[none:GEO:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 2 (generated)' name='[Action2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard -Total Cancer Cases by Type' type='sheet' worksheet='Total Cases by Cancer Type' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard -Total Cancer Cases by Type' />
+      </command>
+    </action>
+    <action caption='Filter 1 (generated) 1' name='[Action3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard - Total Cancer Cases by Region (2)' type='sheet' worksheet='Total Cancer Cases' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard - Total Cancer Cases by Region (2)' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Cancer Type by Province 2011-2017'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='13100762_cleaned' name='federated.1b8u2vt0dbuy7116ooyix0nf9m65' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1b8u2vt0dbuy7116ooyix0nf9m65'>
+            <column datatype='string' name='[Characteristics]' role='dimension' type='nominal' />
+            <column datatype='string' name='[GEO]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Primary Types' datatype='string' name='[Primary_Types]' role='dimension' type='nominal' />
+            <column caption='Ref Date' datatype='integer' name='[REF_DATE]' role='measure' type='quantitative' />
+            <column-instance column='[Characteristics]' derivation='Count' name='[cnt:Characteristics:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GEO]' derivation='None' name='[none:GEO:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Primary_Types]' derivation='None' name='[none:Primary_Types:nk]' pivot='key' type='nominal' />
+            <column-instance column='[REF_DATE]' derivation='None' name='[none:REF_DATE:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Action (GEO)]'>
+            <groupfilter function='level-members' level='[GEO]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <alphabetic-sort column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]' direction='DESC' />
+          <slices>
+            <column>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]</column>
+            <column>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Action (GEO)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:REF_DATE:qk]' scope='cols' value='' />
+            <format attr='title' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]' scope='rows' value='No. of Cases' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]' value='Cancer Type'>
+              <formatted-text>
+                <run>Cancer Type</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.5712155103683472' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]</rows>
+        <cols>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:REF_DATE:qk]</cols>
+      </table>
+      <simple-id uuid='{549C9802-C142-4573-A5C2-36238858D911}' />
+    </worksheet>
+    <worksheet name='Cases by Sex'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='13100762_cleaned' name='federated.1b8u2vt0dbuy7116ooyix0nf9m65' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1b8u2vt0dbuy7116ooyix0nf9m65'>
+            <column datatype='string' name='[Characteristics]' role='dimension' type='nominal' />
+            <column datatype='string' name='[GEO]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Ref Date' datatype='integer' name='[REF_DATE]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Sex]' role='dimension' type='nominal' />
+            <column-instance column='[Characteristics]' derivation='Count' name='[cnt:Characteristics:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sex]' derivation='Count' name='[cnt:Sex:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GEO]' derivation='None' name='[none:GEO:nk]' pivot='key' type='nominal' />
+            <column-instance column='[REF_DATE]' derivation='None' name='[none:REF_DATE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sex]' derivation='None' name='[none:Sex:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Action (GEO)]'>
+            <groupfilter function='level-members' level='[GEO]' user:ui-action-filter='[Action3]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Sex:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Sex:nk]' />
+              <groupfilter function='empty-level' member='[none:Sex:nk]' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Sex:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Males&quot;</bucket>
+              <bucket>&quot;Females&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Sex:nk]</column>
+            <column>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]</column>
+            <column>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Action (GEO)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:REF_DATE:qk]' scope='cols' value='' />
+            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Sex:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Sex:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]' scope='rows' value='No. of Cases' />
+            <format attr='height' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:REF_DATE:qk]' value='57' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]' value='Province'>
+              <formatted-text>
+                <run>Province</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='9' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <text column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='10' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Sex:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Sex:nk]' />
+              <text column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#4e79a7' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='11' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]' />
+              <text column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#4e79a7' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk] + [federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Sex:qk])</rows>
+        <cols>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:REF_DATE:qk]</cols>
+      </table>
+      <simple-id uuid='{19E56CFF-A087-4EBB-B6A6-D82ACEC80B21}' />
+    </worksheet>
+    <worksheet name='Cases by Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='13100762_cleaned' name='federated.1b8u2vt0dbuy7116ooyix0nf9m65' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b8u2vt0dbuy7116ooyix0nf9m65'>
+            <column datatype='string' name='[GEO]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Primary Types' datatype='string' name='[Primary_Types]' role='dimension' type='nominal' />
+            <column caption='Ref Date' datatype='integer' name='[REF_DATE]' role='measure' type='quantitative' />
+            <column-instance column='[Primary_Types]' derivation='Count' name='[cnt:Primary_Types:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GEO]' derivation='None' name='[none:GEO:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Primary_Types]' derivation='None' name='[none:Primary_Types:nk]' pivot='key' type='nominal' />
+            <column-instance column='[REF_DATE]' derivation='None' name='[none:REF_DATE:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Action (Primary Types)]'>
+            <groupfilter function='member' level='[Primary_Types]' member='&quot;Breast&quot;' user:ui-action-filter='[Action2]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]'>
+            <groupfilter function='level-members' level='[none:Primary_Types:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]</column>
+            <column>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Action (Primary Types)]</column>
+            <column>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:REF_DATE:qk]' scope='cols' value='Year' />
+            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:REF_DATE:qk]' field-type='quantitative' max='2018' min='2010' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Primary_Types:qk]' scope='rows' value='No. of Cases' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7471270561218262' />
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-transparency' value='203' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='999' />
+                <format attr='maxwidth' value='999' />
+                <format attr='minheight' value='650' />
+                <format attr='maxheight' value='650' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='999' />
+                <format attr='maxwidth' value='999' />
+                <format attr='minheight' value='650' />
+                <format attr='maxheight' value='650' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Primary_Types:qk]</rows>
+        <cols>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:REF_DATE:qk]</cols>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='99.000000' enabled='false' fill-type='fill-missing' ignore-last='0' model-type='auto-season' range-type='auto' show-prediction-bands='true' />
+      </table>
+      <simple-id uuid='{C5D93C52-3CB0-4730-8BE9-C77175604435}' />
+    </worksheet>
+    <worksheet name='Total Cancer Cases'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='13100762_cleaned' name='federated.1b8u2vt0dbuy7116ooyix0nf9m65' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1b8u2vt0dbuy7116ooyix0nf9m65'>
+            <column datatype='string' name='[Characteristics]' role='dimension' type='nominal' />
+            <column datatype='string' name='[GEO]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Primary Types' datatype='string' name='[Primary_Types]' role='dimension' type='nominal' />
+            <column-instance column='[Characteristics]' derivation='Count' name='[cnt:Characteristics:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GEO]' derivation='None' name='[none:GEO:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Action (Primary Types)]'>
+            <groupfilter function='member' level='[Primary_Types]' member='&quot;Breast&quot;' user:ui-action-filter='[Action2]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Action (Primary Types)]</column>
+            <column>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Longitude (generated)]' field-type='quantitative' max='-243974829.41324577' min='-258890729.69214934' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Latitude (generated)]' field-type='quantitative' max='11457208.445222061' min='5247584.9300092915' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]' min='0' palette='red_blue_diverging_10_0' reverse='true' symmetric='false' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]' value='Total Number of  Cases'>
+              <formatted-text>
+                <run fontalignment='0'>Total Number of  Cases</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]' value='Province'>
+              <formatted-text>
+                <run>Province</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]' />
+              <text column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]' />
+              <text column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]' />
+              <lod column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]' />
+              <geometry column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='wrap' value='auto' />
+                <format attr='vertical-align' value='auto' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='8' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='2.1104972362518311' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-range-scope' value='cell' />
+                <format attr='mark-labels-range-min' value='false' />
+                <format attr='mark-labels-range-max' value='false' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Latitude (generated)]</rows>
+        <cols>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{82D54B9D-C007-4A70-AF29-CC9A86073EAC}' />
+    </worksheet>
+    <worksheet name='Total Cases by Cancer Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='13100762_cleaned' name='federated.1b8u2vt0dbuy7116ooyix0nf9m65' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1b8u2vt0dbuy7116ooyix0nf9m65'>
+            <column datatype='string' name='[Characteristics]' role='dimension' type='nominal' />
+            <column datatype='string' name='[GEO]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Primary Types' datatype='string' name='[Primary_Types]' role='dimension' type='nominal' />
+            <column-instance column='[Characteristics]' derivation='Count' name='[cnt:Characteristics:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GEO]' derivation='None' name='[none:GEO:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Primary_Types]' derivation='None' name='[none:Primary_Types:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]'>
+            <groupfilter function='level-members' level='[none:Primary_Types:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <natural-sort column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]' direction='DESC' />
+          <slices>
+            <column>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]</column>
+            <column>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]' field-type='quantitative' major-origin='0' major-show='false' major-spacing='100' max='7740' min='0' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]' scope='cols' value='' />
+            <format attr='height' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]' value='30' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]' value='95' />
+            <format attr='wrap' value='on' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]' value='184' />
+            <format attr='height-header' value='22' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='wrap' scope='cols' value='on' />
+            <format attr='wrap' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]' value='on' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='auto' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]' value='Type of Cancer' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]' value='Type of Cancer' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]' />
+              <text column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]</rows>
+        <cols>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]</cols>
+      </table>
+      <simple-id uuid='{6DF04C0B-31ED-46CB-9C17-93CEA5959CF3}' />
+    </worksheet>
+    <worksheet name='Total Cases by Province'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='13100762_cleaned' name='federated.1b8u2vt0dbuy7116ooyix0nf9m65' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b8u2vt0dbuy7116ooyix0nf9m65'>
+            <column datatype='string' name='[Characteristics]' role='dimension' type='nominal' />
+            <column datatype='string' name='[GEO]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Ref Date' datatype='integer' name='[REF_DATE]' role='measure' type='quantitative' />
+            <column-instance column='[Characteristics]' derivation='Count' name='[cnt:Characteristics:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GEO]' derivation='None' name='[none:GEO:nk]' pivot='key' type='nominal' />
+            <column-instance column='[REF_DATE]' derivation='None' name='[none:REF_DATE:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Action (GEO)]'>
+            <groupfilter function='member' level='[GEO]' member='&quot;British Columbia&quot;' user:ui-action-filter='[Action1]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Action (GEO)]</column>
+            <column>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:REF_DATE:qk]' scope='cols' value='Year' />
+            <format attr='title' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]' scope='rows' value='No. of Cases' />
+            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:REF_DATE:qk]' field-type='quantitative' max='2018' min='2010' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]' field-type='quantitative' max='719' min='128' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]' value='Province' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7471270561218262' />
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-transparency' value='203' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='999' />
+                <format attr='maxwidth' value='999' />
+                <format attr='minheight' value='650' />
+                <format attr='maxheight' value='650' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]</rows>
+        <cols>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:REF_DATE:qk]</cols>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='99.000000' enabled='false' fill-type='fill-missing' ignore-last='0' model-type='auto-season' range-type='auto' show-prediction-bands='true' />
+      </table>
+      <simple-id uuid='{0C3F0E31-76F2-42B2-91C9-C83EC38DEDB0}' />
+    </worksheet>
+    <worksheet name='Total Cases by Type in each Province'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='13100762_cleaned' name='federated.1b8u2vt0dbuy7116ooyix0nf9m65' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1b8u2vt0dbuy7116ooyix0nf9m65'>
+            <column datatype='string' name='[Characteristics]' role='dimension' type='nominal' />
+            <column datatype='string' name='[GEO]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Primary Types' datatype='string' name='[Primary_Types]' role='dimension' type='nominal' />
+            <column-instance column='[Characteristics]' derivation='Count' name='[cnt:Characteristics:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GEO]' derivation='None' name='[none:GEO:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Primary_Types]' derivation='None' name='[none:Primary_Types:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Action (GEO)]'>
+            <groupfilter function='level-members' level='[GEO]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]'>
+            <groupfilter function='level-members' level='[none:Primary_Types:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <natural-sort column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]' direction='DESC' />
+          <slices>
+            <column>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]</column>
+            <column>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Action (GEO)]</column>
+            <column>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]' field-type='quantitative' major-origin='0' major-show='false' major-spacing='100' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]' scope='cols' value='' />
+            <format attr='height' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]' value='16' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='wrap' value='on' />
+            <format attr='height' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]' value='48' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]' value='184' />
+            <format attr='height-header' value='22' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='wrap' scope='cols' value='on' />
+            <format attr='wrap' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]' value='on' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='auto' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]' value='Type of Cancer' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]' value='Type of Cancer'>
+              <formatted-text>
+                <run>Type of Cancer</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Action (GEO)]' value='Province'>
+              <formatted-text>
+                <run>Province</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]' />
+              <text column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk] / [federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk])</rows>
+        <cols>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]</cols>
+      </table>
+      <simple-id uuid='{B07BCDF8-ADB7-403E-8F61-C695C2BBDDC9}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard - Total Cancer Cases by Region (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Cancer Cases by Region</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='13100762_cleaned' name='federated.1b8u2vt0dbuy7116ooyix0nf9m65' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1b8u2vt0dbuy7116ooyix0nf9m65'>
+        <column datatype='string' name='[GEO]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+        <column-instance column='[GEO]' derivation='None' name='[none:GEO:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='54' param='horz' w='99034' x='483' y='929'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='43' param='horz' w='99034' x='483' y='929'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='33' param='vert' w='99034' x='483' y='929'>
+                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='5807' id='34' w='99034' x='483' y='929'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='92335' id='31' param='horz' w='99034' x='483' y='6736'>
+                  <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='92335' id='28' param='horz' w='99034' x='483' y='6736'>
+                    <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='92335' id='26' param='horz' w='99034' x='483' y='6736'>
+                      <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='92335' id='24' param='horz' w='99034' x='483' y='6736'>
+                        <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='92335' id='21' param='horz' w='99034' x='483' y='6736'>
+                          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='92335' id='16' param='horz' w='99034' x='483' y='6736'>
+                            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='92335' id='11' param='horz' w='99034' x='483' y='6736'>
+                              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='92335' id='7' param='horz' w='99034' x='483' y='6736'>
+                                <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='92335' id='5' w='99034' x='483' y='6736'>
+                                  <zone h='39605' id='3' name='Total Cancer Cases' show-title='false' w='47314' x='483' y='6736'>
+                                    <zone-style>
+                                      <format attr='border-color' value='#000000' />
+                                      <format attr='border-style' value='none' />
+                                      <format attr='border-width' value='0' />
+                                      <format attr='margin' value='4' />
+                                    </zone-style>
+                                  </zone>
+                                  <zone h='52730' id='14' name='Total Cases by Type in each Province' show-title='false' w='47314' x='483' y='46341'>
+                                    <zone-style>
+                                      <format attr='border-color' value='#000000' />
+                                      <format attr='border-style' value='none' />
+                                      <format attr='border-width' value='0' />
+                                      <format attr='margin' value='4' />
+                                    </zone-style>
+                                  </zone>
+                                  <zone h='50755' id='41' name='Cancer Type by Province 2011-2017' w='37236' x='47797' y='6736'>
+                                    <zone-style>
+                                      <format attr='border-color' value='#000000' />
+                                      <format attr='border-style' value='none' />
+                                      <format attr='border-width' value='0' />
+                                      <format attr='margin' value='4' />
+                                    </zone-style>
+                                  </zone>
+                                  <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='50755' id='45' leg-item-layout='vert' name='Cancer Type by Province 2011-2017' pane-specification-id='1' param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]' w='14484' x='85033' y='6736'>
+                                    <zone-style>
+                                      <format attr='border-color' value='#000000' />
+                                      <format attr='border-style' value='none' />
+                                      <format attr='border-width' value='0' />
+                                      <format attr='margin' value='4' />
+                                    </zone-style>
+                                  </zone>
+                                  <zone h='41580' id='52' name='Cases by Sex' w='37236' x='47797' y='57491'>
+                                    <zone-style>
+                                      <format attr='border-color' value='#000000' />
+                                      <format attr='border-style' value='none' />
+                                      <format attr='border-width' value='0' />
+                                      <format attr='margin' value='4' />
+                                    </zone-style>
+                                  </zone>
+                                  <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='41580' id='56' name='Cases by Sex' pane-specification-id='11' param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]' w='14484' x='85033' y='57491'>
+                                    <zone-style>
+                                      <format attr='border-color' value='#000000' />
+                                      <format attr='border-style' value='none' />
+                                      <format attr='border-width' value='0' />
+                                      <format attr='margin' value='4' />
+                                    </zone-style>
+                                  </zone>
+                                </zone>
+                              </zone>
+                            </zone>
+                          </zone>
+                        </zone>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='7201' id='8' name='Total Cancer Cases' pane-specification-id='4' param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]' w='12311' x='35124' y='14170' />
+        <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' fixed-size='490' h='6156' id='19' is-fixed='true' mode='checkdropdown' name='Total Cancer Cases' param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]' values='database' w='9656' x='35848' y='7433' />
+        <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='3833' id='57' leg-item-layout='horz' name='Cases by Sex' pane-specification-id='10' param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Sex:nk]' w='28425' x='52444' y='95587' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run>Total Cancer Cases by Region</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1550' minheight='1550' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='75' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='74' param='vert' w='99034' x='483' y='929'>
+                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='5807' id='34' w='99034' x='483' y='929'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' fixed-size='490' h='6156' id='19' mode='checkdropdown' name='Total Cancer Cases' param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]' values='database' w='9656' x='35848' y='7433'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39605' id='3' is-fixed='true' name='Total Cancer Cases' show-title='false' w='47314' x='483' y='6736'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='7201' id='8' name='Total Cancer Cases' pane-specification-id='4' param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]' w='12311' x='35124' y='14170'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='50755' id='41' is-fixed='true' name='Cancer Type by Province 2011-2017' w='37236' x='47797' y='6736'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='50755' id='45' leg-item-layout='vert' name='Cancer Type by Province 2011-2017' pane-specification-id='1' param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]' w='14484' x='85033' y='6736'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='52730' id='14' is-fixed='true' name='Total Cases by Type in each Province' show-title='false' w='47314' x='483' y='46341'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41580' id='52' is-fixed='true' name='Cases by Sex' w='37236' x='47797' y='57491'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='41580' id='56' name='Cases by Sex' pane-specification-id='11' param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]' w='14484' x='85033' y='57491'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='3833' id='57' leg-item-layout='horz' name='Cases by Sex' pane-specification-id='10' param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Sex:nk]' w='28425' x='52444' y='95587'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{9E55EBC1-D457-48F2-A007-614540DEB89C}' />
+    </dashboard>
+    <dashboard name='Dashboard -Total Cancer Cases by Type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Cancer Cases by Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='36' param='vert' w='99034' x='483' y='929'>
+            <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='5807' id='37' w='99034' x='483' y='929'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='92335' id='34' param='horz' w='99034' x='483' y='6736'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='92335' id='30' param='horz' w='99034' x='483' y='6736'>
+                <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='92335' id='27' param='horz' w='99034' x='483' y='6736'>
+                  <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='92335' id='24' param='horz' w='99034' x='483' y='6736'>
+                    <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='92335' id='21' param='horz' w='99034' x='483' y='6736'>
+                      <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='92335' id='16' param='horz' w='99034' x='483' y='6736'>
+                        <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='92335' id='11' param='horz' w='99034' x='483' y='6736'>
+                          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='92335' id='7' param='horz' w='99034' x='483' y='6736'>
+                            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='92335' id='5' w='99034' x='483' y='6736'>
+                              <zone h='46167' id='3' name='Total Cancer Cases' show-title='false' w='56816' x='42701' y='6736'>
+                                <zone-style>
+                                  <format attr='border-color' value='#000000' />
+                                  <format attr='border-style' value='none' />
+                                  <format attr='border-width' value='0' />
+                                  <format attr='margin' value='4' />
+                                </zone-style>
+                              </zone>
+                              <zone h='46168' id='25' name='Cases by Type' w='43064' x='42701' y='52903'>
+                                <zone-style>
+                                  <format attr='border-color' value='#000000' />
+                                  <format attr='border-style' value='none' />
+                                  <format attr='border-width' value='0' />
+                                  <format attr='margin' value='4' />
+                                </zone-style>
+                              </zone>
+                              <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='46168' id='28' name='Cases by Type' pane-specification-id='1' param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]' w='13752' x='85765' y='52903'>
+                                <zone-style>
+                                  <format attr='border-color' value='#000000' />
+                                  <format attr='border-style' value='none' />
+                                  <format attr='border-width' value='0' />
+                                  <format attr='margin' value='4' />
+                                </zone-style>
+                              </zone>
+                              <zone h='92335' id='32' name='Total Cases by Cancer Type' show-title='false' w='42218' x='483' y='6736'>
+                                <zone-style>
+                                  <format attr='border-color' value='#000000' />
+                                  <format attr='border-style' value='none' />
+                                  <format attr='border-width' value='0' />
+                                  <format attr='margin' value='4' />
+                                </zone-style>
+                              </zone>
+                            </zone>
+                          </zone>
+                        </zone>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='6272' id='8' name='Total Cancer Cases' pane-specification-id='4' param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]' w='12847' x='85826' y='8827' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run>Total Cancer Cases by Type</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='67' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='66' param='vert' w='99034' x='483' y='929'>
+                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='5807' id='37' w='99034' x='483' y='929'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='92335' id='32' is-fixed='true' name='Total Cases by Cancer Type' show-title='false' w='42219' x='483' y='6736'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46167' id='3' is-fixed='true' name='Total Cancer Cases' show-title='false' w='56815' x='42702' y='6736'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='6272' id='8' name='Total Cancer Cases' pane-specification-id='4' param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]' w='12847' x='85826' y='8827'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46168' id='25' is-fixed='true' name='Cases by Type' w='43064' x='42702' y='52903'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='46168' id='28' name='Cases by Type' pane-specification-id='1' param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]' w='13751' x='85766' y='52903'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{B09EC510-66F0-49F0-806F-112A038DE664}' />
+    </dashboard>
+    <dashboard name='Story - Data by Provinces' type='storyboard'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='2' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='1' param='vert' removable='false' w='99034' x='483' y='929'>
+            <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='4878' id='3' w='99034' x='483' y='929' />
+            <zone _.fcp.SetMembershipControl.false...type='flipboard-nav' _.fcp.SetMembershipControl.true...type-v2='flipboard-nav' h='11731' id='4' is-fixed='true' paired-zone-id='5' removable='false' w='99034' x='483' y='5807' />
+            <zone _.fcp.SetMembershipControl.false...type='flipboard' _.fcp.SetMembershipControl.true...type-v2='flipboard' h='81533' id='5' paired-zone-id='4' removable='false' w='99034' x='483' y='17538'>
+              <flipboard active-id='2' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='All of Canada' captured-sheet='Dashboard - Total Cancer Cases by Region (2)' id='1'>
+                    <capturedDeltas>
+                      <worksheet name='Cancer Type by Province 2011-2017'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Action (GEO)]'>
+                          <groupfilter function='level-members' level='[GEO]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Cases by Sex'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Action (GEO)]'>
+                          <groupfilter function='level-members' level='[GEO]' user:ui-action-filter='[Action3]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Total Cancer Cases'>
+                        <selection-collection />
+                      </worksheet>
+                      <worksheet name='Total Cases by Type in each Province'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Action (GEO)]'>
+                          <groupfilter function='level-members' level='[GEO]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Cases in BC' captured-sheet='Dashboard - Total Cancer Cases by Region (2)' id='2'>
+                    <capturedDeltas>
+                      <worksheet name='Cancer Type by Province 2011-2017'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;British Columbia&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Cases by Sex'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;British Columbia&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Total Cancer Cases'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;British Columbia&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Latitude (generated)]' field-type='quantitative' max='8786308.1625104919' min='6111002.1536104213' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Longitude (generated)]' field-type='quantitative' max='-10414450.050282717' min='-16431927.096032653' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                          </style-rule>
+                        </style>
+                      </worksheet>
+                      <worksheet name='Total Cases by Type in each Province'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;British Columbia&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Cases in AB' captured-sheet='Dashboard - Total Cancer Cases by Region (2)' id='3'>
+                    <capturedDeltas>
+                      <worksheet name='Cancer Type by Province 2011-2017'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Alberta&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Cases by Sex'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Action (GEO)]'>
+                          <groupfilter function='level-members' level='[GEO]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+                        </filter>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Alberta&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Total Cancer Cases'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Alberta&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Latitude (generated)]' field-type='quantitative' max='8425409.8393504284' min='6299199.2044607317' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Longitude (generated)]' field-type='quantitative' max='-9758635.0359421633' min='-15935921.369044125' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                          </style-rule>
+                        </style>
+                      </worksheet>
+                      <worksheet name='Total Cases by Type in each Province'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Alberta&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Cases in SK' captured-sheet='Dashboard - Total Cancer Cases by Region (2)' id='4'>
+                    <capturedDeltas>
+                      <worksheet name='Cancer Type by Province 2011-2017'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Saskatchewan&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Cases by Sex'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Action (GEO)]'>
+                          <groupfilter function='level-members' level='[GEO]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+                        </filter>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Saskatchewan&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Total Cancer Cases'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Saskatchewan&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Latitude (generated)]' field-type='quantitative' max='8541357.6381485499' min='6197894.8655840354' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Longitude (generated)]' field-type='quantitative' max='-9322398.2405436486' min='-16130867.881110087' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                          </style-rule>
+                        </style>
+                      </worksheet>
+                      <worksheet name='Total Cases by Type in each Province'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Saskatchewan&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Cases in MB' captured-sheet='Dashboard - Total Cancer Cases by Region (2)' id='5'>
+                    <capturedDeltas>
+                      <worksheet name='Cancer Type by Province 2011-2017'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Manitoba&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Cases by Sex'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Action (GEO)]'>
+                          <groupfilter function='level-members' level='[GEO]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+                        </filter>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Manitoba&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Total Cancer Cases'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Manitoba&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Latitude (generated)]' field-type='quantitative' max='8558365.4865892828' min='6214902.7140247691' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Longitude (generated)]' field-type='quantitative' max='-7153203.8710501008' min='-13961673.511616541' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                          </style-rule>
+                        </style>
+                      </worksheet>
+                      <worksheet name='Total Cases by Type in each Province'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Manitoba&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Cases in ON' captured-sheet='Dashboard - Total Cancer Cases by Region (2)' id='6'>
+                    <capturedDeltas>
+                      <worksheet name='Cancer Type by Province 2011-2017'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Ontario&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Cases by Sex'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Action (GEO)]'>
+                          <groupfilter function='level-members' level='[GEO]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+                        </filter>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Ontario&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Total Cancer Cases'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Ontario&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Latitude (generated)]' field-type='quantitative' max='7924689.0179056358' min='4805540.1421744889' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Longitude (generated)]' field-type='quantitative' max='-4620012.77585488' min='-13682085.650852023' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                          </style-rule>
+                        </style>
+                      </worksheet>
+                      <worksheet name='Total Cases by Type in each Province'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Ontario&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Cases in NB' captured-sheet='Dashboard - Total Cancer Cases by Region (2)' id='7'>
+                    <capturedDeltas>
+                      <worksheet name='Cancer Type by Province 2011-2017'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;New Brunswick&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Cases by Sex'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;New Brunswick&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Total Cancer Cases'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;New Brunswick&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Latitude (generated)]' field-type='quantitative' max='6167712.0870824512' min='5621090.7313570343' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Longitude (generated)]' field-type='quantitative' max='-6667738.2250976888' min='-8255838.9403776936' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                          </style-rule>
+                        </style>
+                      </worksheet>
+                      <worksheet name='Total Cases by Type in each Province'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;New Brunswick&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Cases in NS' captured-sheet='Dashboard - Total Cancer Cases by Region (2)' id='8'>
+                    <capturedDeltas>
+                      <worksheet name='Cancer Type by Province 2011-2017'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Action (GEO)]'>
+                          <groupfilter function='member' level='[GEO]' member='&quot;Nova Scotia&quot;' user:ui-action-filter='[Action1]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Nova Scotia&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Cases by Sex'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Action (GEO)]'>
+                          <groupfilter function='member' level='[GEO]' member='&quot;Nova Scotia&quot;' user:ui-action-filter='[Action3]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Nova Scotia&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Total Cancer Cases'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Nova Scotia&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Latitude (generated)]' field-type='quantitative' max='5991120.3088975307' min='5319388.6606553104' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Longitude (generated)]' field-type='quantitative' max='-6037412.1517931502' min='-7991540.6249566497' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                          </style-rule>
+                        </style>
+                        <selection-collection>
+                          <tuple-selection>
+                            <tuple-reference>
+                              <tuple-descriptor>
+                                <pane-descriptor>
+                                  <x-fields>
+                                    <field>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Longitude (generated)]</field>
+                                  </x-fields>
+                                  <y-fields>
+                                    <field>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Latitude (generated)]</field>
+                                  </y-fields>
+                                </pane-descriptor>
+                                <columns>
+                                  <field>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]</field>
+                                  <field>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]</field>
+                                  <field>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Geometry (generated)]</field>
+                                  <field>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Latitude (generated)]</field>
+                                  <field>[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Longitude (generated)]</field>
+                                </columns>
+                              </tuple-descriptor>
+                              <tuple>
+                                <value>3432</value>
+                                <value>&quot;Nova Scotia&quot;</value>
+                                <value>&quot;MULTIPOLYGON(((-59.6823 46.0355,-59.6995 45.992,-59.7955 46.0031,-59.6823 46.0355)),((-60.2919 46.3371,-60.2181 46.232,-60.3087 46.1688,-60.2027 46.2025,-60.127 46.2674,-60.0276 46.2427,-60.0806 46.2172,-59.953 46.2172,-59.8112 46.1718,-59.8867 46.1185,-59.798 46.1265,-59.9511 46.0106,-59.8408 46.016,-59.8039 45.9673,-59.9614 45.923,-60.0019 45.8772,-60.1181 45.8848,-60.1735 45.8534,-60.0806 45.8148,-60.1691 45.7829,-60.2275 45.7265,-60.3172 45.7091,-60.4411 45.6392,-60.6233 45.6132,-60.7467 45.5734,-60.7648 45.6083,-60.8725 45.62,-60.8201 45.6869,-60.7493 45.7109,-60.7514 45.7826,-60.5353 45.9106,-60.3972 46.0168,-60.7132 45.8988,-60.7982 45.9358,-60.6932 46.0126,-60.5119 46.0945,-60.3424 46.2262,-60.3783 46.2402,-60.5977 46.0926,-60.5937 46.1328,-60.3924 46.3055,-60.2919 46.3371)),((-60.5985 47.042,-60.4683 47.0028,-60.3872 47.0194,-60.4541 46.9588,-60.4372 46.886,-60.3512 46.8845,-60.3018 46.848,-60.3547 46.6898,-60.4015 46.6822,-60.3498 46.6275,-60.4086 46.5493,-60.458 46.4312,-60.592 46.2566,-60.4469 46.3459,-60.4379 46.2912,-60.6145 46.1346,-60.7144 46.0942,-60.8404 46.0709,-60.8794 46.0951,-60.9939 45.991,-61.1397 45.9387,-61.0541 45.9393,-60.9727 45.996,-60.7508 46.0764,-60.8179 45.9805,-60.8135 45.9461,-60.9935 45.9076,-60.9435 45.85,-61.1026 45.7922,-61.1641 45.7114,-61.0876 45.6984,-60.9644 45.7681,-60.8093 45.7333,-60.8309 45.6783,-60.8965 45.6378,-61.1625 45.5655,-61.1761 45.6018,-61.331 45.5647,-61.4668 45.7219,-61.4963 45.8042,-61.4947 45.8917,-61.5526 46.0414,-61.4802 46.0809,-61.4111 46.1947,-61.3124 46.2351,-61.0989 46.4546,-61.0344 46.6037,-60.961 46.6728,-60.903 46.7709,-60.691 46.9157,-60.6599 46.9881,-60.5985 47.042)),((-61.0218 45.5936,-60.8944 45.5741,-61.0041 45.5121,-61.0919 45.515,-61.1361 45.564,-61.0218 45.5936)),((-64.273 45.8424,-64.1496 45.9799,-64.047 45.9769,-64.0415 45.9925,-63.9062 45.9816,-63.8113 45.8922,-63.666 45.8499,-63.6753 45.8738,-63.4667 45.8783,-63.4124 45.8522,-63.4628 45.8139,-63.2342 45.7996,-63.3848 45.7573,-63.2961 45.7273,-63.0715 45.7604,-63.0953 45.7969,-62.8791 45.7703,-62.6802 45.7638,-62.6385 45.7154,-62.6688 45.6834,-62.5518 45.6706,-62.5403 45.6438,-62.286 45.6973,-62.1726 45.7621,-62.0862 45.7871,-61.9793 45.8736,-61.9251 45.8454,-61.8891 45.7358,-61.9283 45.6388,-61.8829 45.6817,-61.7379 45.6314,-61.5944 45.6471,-61.5689 45.6922,-61.4705 45.684,-61.3998 45.6321,-61.3847 45.5826,-61.2494 45.5225,-61.2552 45.4597,-61.4904 45.3779,-61.4652 45.3532,-61.0678 45.3498,-60.9615 45.3227,-60.9974 45.2756,-61.1285 45.2071,-61.131 45.2698,-61.3463 45.2446,-61.384 45.2031,-61.3158 45.201,-61.4618 45.1514,-61.6458 45.1242,-61.754 45.08,-61.8475 45.1041,-61.821 45.067,-61.884 45.0273,-61.9532 45.0497,-62.0269 44.9795,-62.3826 44.9123,-62.3959 44.8723,-62.6093 44.8432,-62.839 44.7455,-62.8177 44.7098,-63.0074 44.7214,-63.048 44.6728,-63.1034 44.7271,-63.1851 44.7063,-63.2484 44.7389,-63.2445 44.6801,-63.2931 44.6375,-63.4113 44.6478,-63.4519 44.589,-63.6457 44.7144,-63.5438 44.5862,-63.5201 44.5005,-63.5874 44.4579,-63.8005 44.4695,-63.9195 44.4912,-63.9474 44.5356,-63.891 44.6917,-64.0568 44.6245,-64.006 44.5076,-64.0885 44.4693,-64.1703 44.5874,-64.2129 44.5376,-64.317 44.5456,-64.3006 44.5097,-64.349 44.4468,-64.3265 44.4047,-64.2124 44.3799,-64.2365 44.3528,-64.3438 44.3642,-64.2442 44.2606,-64.3466 44.289,-64.4346 44.2267,-64.4924 44.1395,-64.5919 44.1597,-64.5467 44.1226,-64.5757 44.0578,-64.6204 44.0734,-64.7336 43.953,-64.813 43.9539,-64.8361 43.9134,-64.784 43.8644,-64.8806 43.8437,-65.0278 43.6952,-65.0752 43.7504,-65.1457 43.6719,-65.2379 43.7996,-65.2255 43.7239,-65.2553 43.6578,-65.3238 43.6915,-65.3141 43.7494,-65.3823 43.7374,-65.327 43.6777,-65.3703 43.572,-65.4907 43.4882,-65.5976 43.5558,-65.6119 43.519,-65.7276 43.4904,-65.7865 43.5669,-65.7829 43.6988,-65.8132 43.6024,-65.8209 43.7131,-65.8573 43.7938,-65.891 43.7442,-65.9658 43.7477,-66.0166 43.6807,-66.0926 43.7783,-66.1255 43.7404,-66.1686 43.8549,-66.1654 44.0388,-66.2042 44.1178,-66.1337 44.2488,-66.1259 44.331,-65.9756 44.4828,-65.8948 44.5205,-65.8627 44.5884,-65.9829 44.5573,-66.1973 44.3773,-66.2002 44.4144,-65.9518 44.6086,-65.7858 44.6924,-65.7511 44.6142,-65.6118 44.6609,-65.5153 44.7552,-65.731 44.6678,-65.745 44.7095,-65.3733 44.8994,-65.3195 44.9139,-64.9498 45.1033,-64.8851 45.1285,-64.4472 45.2494,-64.3698 45.316,-64.3263 45.2757,-64.3924 45.1488,-64.3594 45.0927,-64.287 45.1368,-64.1937 45.1076,-64.1735 45.1863,-63.892 45.2789,-63.7271 45.3193,-63.4897 45.315,-63.3686 45.3613,-63.6062 45.3927,-63.7794 45.4013,-63.8867 45.3486,-63.9484 45.3951,-64.0614 45.4083,-64.3175 45.3907,-64.3923 45.3644,-64.5603 45.4066,-64.7025 45.3652,-64.7094 45.3136,-64.7702 45.3009,-64.8501 45.3542,-64.9447 45.3279,-64.9141 45.4301,-64.836 45.4803,-64.573 45.6061,-64.4379 45.7073,-64.4497 45.7337,-64.3062 45.8238,-64.3321 45.7537,-64.2444 45.8236,-64.273 45.8424)),((-65.5983 43.5096,-65.5584 43.4759,-65.611 43.4231,-65.6513 43.4479,-65.5983 43.5096)),((-66.2152 44.4046,-66.2146 44.3756,-66.3271 44.2494,-66.3338 44.2776,-66.2152 44.4046)))&quot;</value>
+                                <value>45.0</value>
+                                <value>-63.579999999999998</value>
+                              </tuple>
+                            </tuple-reference>
+                          </tuple-selection>
+                        </selection-collection>
+                      </worksheet>
+                      <worksheet name='Total Cases by Type in each Province'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Action (GEO)]'>
+                          <groupfilter function='member' level='[GEO]' member='&quot;Nova Scotia&quot;' user:ui-action-filter='[Action1]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Nova Scotia&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Cases in PE' captured-sheet='Dashboard - Total Cancer Cases by Region (2)' id='9'>
+                    <capturedDeltas>
+                      <worksheet name='Cancer Type by Province 2011-2017'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Prince Edward Island&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Cases by Sex'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Prince Edward Island&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Total Cancer Cases'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Prince Edward Island&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Latitude (generated)]' field-type='quantitative' max='5981848.2687856425' min='5728202.0181681439' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Longitude (generated)]' field-type='quantitative' max='-6693002.0898235645' min='-7429921.326173502' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                          </style-rule>
+                        </style>
+                      </worksheet>
+                      <worksheet name='Total Cases by Type in each Province'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Prince Edward Island&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Cases in NL' captured-sheet='Dashboard - Total Cancer Cases by Region (2)' id='10'>
+                    <capturedDeltas>
+                      <worksheet name='Cancer Type by Province 2011-2017'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Newfoundland and Labrador&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Cases by Sex'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Newfoundland and Labrador&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Total Cancer Cases'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Newfoundland and Labrador&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Latitude (generated)]' field-type='quantitative' max='8621378.7047447637' min='5847149.5924184723' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Longitude (generated)]' field-type='quantitative' max='-2855509.218621362' min='-10915485.638293382' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                          </style-rule>
+                        </style>
+                      </worksheet>
+                      <worksheet name='Total Cases by Type in each Province'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Newfoundland and Labrador&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Cases in NT' captured-sheet='Dashboard - Total Cancer Cases by Region (2)' id='11'>
+                    <capturedDeltas>
+                      <worksheet name='Cancer Type by Province 2011-2017'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Northwest Territories&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Cases by Sex'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Northwest Territories&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Total Cancer Cases'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Northwest Territories&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Latitude (generated)]' field-type='quantitative' max='14539415.277350914' min='8062131.3337378725' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Longitude (generated)]' field-type='quantitative' max='-4195704.2403771579' min='-23015207.49996585' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                          </style-rule>
+                        </style>
+                      </worksheet>
+                      <worksheet name='Total Cases by Type in each Province'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Northwest Territories&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Cases in NU' captured-sheet='Dashboard - Total Cancer Cases by Region (2)' id='12'>
+                    <capturedDeltas>
+                      <worksheet name='Cancer Type by Province 2011-2017'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Nunavut&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Cases by Sex'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Nunavut&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Total Cancer Cases'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Nunavut&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Latitude (generated)]' field-type='quantitative' max='18036511.576706775' min='7401850.4542081151' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Longitude (generated)]' field-type='quantitative' max='5017571.6983374692' min='-25879342.149800509' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                          </style-rule>
+                        </style>
+                      </worksheet>
+                      <worksheet name='Total Cases by Type in each Province'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Nunavut&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Cases in YT' captured-sheet='Dashboard - Total Cancer Cases by Region (2)' id='13'>
+                    <capturedDeltas>
+                      <worksheet name='Cancer Type by Province 2011-2017'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Yukon&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Cases by Sex'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Yukon&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Total Cancer Cases'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Yukon&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Latitude (generated)]' field-type='quantitative' max='11120615.308660448' min='8094108.252514557' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                            <encoding attr='space' class='0' field='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[Longitude (generated)]' field-type='quantitative' max='-10168989.077979561' min='-18961909.388029907' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                          </style-rule>
+                        </style>
+                      </worksheet>
+                      <worksheet name='Total Cases by Type in each Province'>
+                        <filter class='categorical' column='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]'>
+                          <groupfilter function='member' level='[none:GEO:nk]' member='&quot;Yukon&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{D5C2F357-4812-447F-9E0D-76882E918A63}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='Total Cancer Cases'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]' type='filter' />
+            <card pane-specification-id='4' param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[cnt:Characteristics:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='92'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <map-scale-visibility value='0' />
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{352AE943-6423-4CF7-8EDE-45B4CC790F31}' />
+    </window>
+    <window class='worksheet' name='Cases by Sex'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]' type='filter' />
+            <card param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Sex:nk]' type='filter' />
+            <card pane-specification-id='10' param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Sex:nk]' type='color' />
+            <card pane-specification-id='11' param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{71192C05-2F9C-40D9-A4FA-B2989937FA0A}' />
+    </window>
+    <window class='worksheet' name='Cancer Type by Province 2011-2017'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]' type='filter' />
+            <card pane-specification-id='1' param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{91DA2985-3CB0-4FEF-95E6-B291737D4DB4}' />
+    </window>
+    <window class='worksheet' name='Total Cases by Province'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{47EB59D9-ABCD-4D7C-A67D-ACA890352287}' />
+    </window>
+    <window class='worksheet' name='Cases by Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{40C948F0-4F79-4382-B35A-695F6A4AFD94}' />
+    </window>
+    <window class='worksheet' name='Total Cases by Type in each Province'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B4CB33E6-5AD4-4720-9564-118DD9BFAB37}' />
+    </window>
+    <window class='worksheet' name='Total Cases by Cancer Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:GEO:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1b8u2vt0dbuy7116ooyix0nf9m65].[none:Primary_Types:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1B9AD6FA-5382-47EB-8C20-7689315481AB}' />
+    </window>
+    <window class='dashboard' name='Dashboard -Total Cancer Cases by Type'>
+      <viewpoints>
+        <viewpoint name='Cases by Type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Cancer Cases'>
+          <zoom type='entire-view' />
+          <map-scale-visibility value='0' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='Total Cases by Cancer Type' />
+      </viewpoints>
+      <active id='32' />
+      <simple-id uuid='{A6E81092-AF12-4093-8DEC-5FEC0DB10579}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard - Total Cancer Cases by Region (2)'>
+      <viewpoints>
+        <viewpoint name='Cancer Type by Province 2011-2017'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Cases by Sex'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Cancer Cases'>
+          <zoom type='entire-view' />
+          <map-scale-visibility value='0' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='Total Cases by Type in each Province' />
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{44F00F39-0985-4550-9764-CD9A7E72AB26}' />
+    </window>
+    <window class='dashboard' name='Story - Data by Provinces'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{13DC95D4-E54D-4249-B4BE-68AB0CA11CAD}' />
+    </window>
+  </windows>
+</workbook>
